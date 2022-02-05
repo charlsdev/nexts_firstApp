@@ -1,0 +1,21 @@
+@import url('Poppins_letter.css');
+
+:root {
+   --bodyColor: rgba(211, 211, 211, 0.575);
+   --negro: #999;
+   --vendido: #ff706b;
+   --libre: #61ff89;
+   --azulOscuro: #1d387e;
+   --negro: #000;
+   --verdeHojaBajo: #7dc7ff;
+
+   /** Colores Bootstrap **/
+   --primary: #188ae2;
+   --danger: #f34943;
+   --info: #35b8e0;
+   --warning: #fdc644;
+   --success: #31ce77;
+   --purple: #6b5eae;
+   --pink: #ff679b;
+   --ash: #3b3e47;
+}
