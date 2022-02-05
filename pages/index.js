@@ -131,52 +131,52 @@ const Index = ({
          </div>
 
       </Container>
-   )
-}
+   );
+};
 
 export const getServerSideProps = async (context) => { 
    let c = 0, n = 0, r = 0, e = 0, d = 0, s = 0, x = 0, v = 0, m = 0;
    
    const resp = await axios.get(
       `https://biingsio.herokuapp.com/searchBol?pass="${process.env.pass}"`
-      );
+   );
    const allBoletos = resp.data.data;
 
    allBoletos.forEach(boletos => {
       if (boletos.vendedor === 'CarlosVP') {
-         ++c
+         ++c;
       }
 
       if (boletos.vendedor === 'NicolM') {
-         ++n
+         ++n;
       }
 
       if (boletos.vendedor === 'RashelM') {
-         ++r
+         ++r;
       }
 
       if (boletos.vendedor === 'ElizaCH') {
-         ++e
+         ++e;
       }
 
       if (boletos.vendedor === 'DavidV') {
-         ++d
+         ++d;
       }
 
       if (boletos.vendedor === 'SebastianN') {
-         ++s
+         ++s;
       }
 
       if (boletos.vendedor === 'XiomaraBP') {
-         ++x
+         ++x;
       }
 
       if (boletos.vendedor === 'VictorFC') {
-         ++v
+         ++v;
       }
 
       if (boletos.vendedor === 'MaferL') {
-         ++m
+         ++m;
       }
    });
 
@@ -185,7 +185,7 @@ export const getServerSideProps = async (context) => {
          allBoletos,
          c, n, r, e, d, s, x, v, m
       }
-   }
-}
+   };
+};
 
 export default Index;
