@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 import Navigation from './navigations';
 
 const Container = (props) => (
@@ -6,7 +7,7 @@ const Container = (props) => (
       <Head>
          <meta charset="UTF-8"/>
          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-         <meta name="theme-color" content="#00b09b"/>
+         <meta name="theme-color" content="#188ae2"/>
          <meta name="author" content="Carlos VP (CharlsDEV)"/>
          <meta name="copyright" content="Copyright (c) 2021 - InnovaTech´S"/>
          <meta name="description" content="Pagina para registro de boletos."/>
@@ -16,13 +17,6 @@ const Container = (props) => (
 
          <link rel="shortcut icon" href="/img/BiingSIO.ico" type="image/x-icon" />
 
-         <link rel="stylesheet" href="/bootswatch/bootstrap.min.css" />
-         <link rel="stylesheet" href="/eggyJS/css/eggy.css" type="text/css" />
-         <link rel="stylesheet" href="/eggyJS/css/progressbar.css" type="text/css" />
-         <link rel="stylesheet" href="/eggyJS/css/theme.css" type="text/css" />
-         
-         <link rel="stylesheet" href="/css/coloresTonos.min.css" type="text/css" />
-         <link rel="stylesheet" href="/css/style.min.css" type="text/css" />
       </Head>
       
       <Navigation/>
@@ -35,9 +29,10 @@ const Container = (props) => (
          Creado por <b>CharlsDEV</b> || © Todos los derechos reservados.
       </div>
 
-      <script src="/JQuery/jquery.min.js"></script>
-      <script src="/eggyJS/js/eggy.js"></script>
-      <script src="/js/main.min.js"></script>
+      <Script id="JQuery" src="/JQuery/jquery.min.js" strategy="beforeInteractive" ></Script>
+      <Script id="EggyJS" src="/eggyJS/js/eggy.js" strategy="beforeInteractive" ></Script>
+      <Script id="MainJS" src="/js/main.min.js" strategy="beforeInteractive" ></Script>
+
    </div>
 )
 

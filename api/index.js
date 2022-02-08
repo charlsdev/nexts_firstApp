@@ -3,7 +3,7 @@ import axios from 'axios';
 export default async function handlers(req, res) {
    try {
       const resp = await axios.get(
-         `https://biingsio.herokuapp.com/searchBol?pass=${process.env.pass}`
+         `https://biingsio.herokuapp.com/searchBol?pass=${process.env.password}`
       );
 
       return res.status(200).json(resp.data.data);
